@@ -16,14 +16,16 @@ namespace AvaloniaApplication4.Views
         private string notes;
         public void ClickHandler(object sender, RoutedEventArgs args)
         {
-            name = message7.Text;
-            password = message8.Text;
-            notes = message1.Text;
-            message2.IsVisible = false;
-            Text1.Text = "Имя пользоватяеля: " + name;
-            Text2.Text = "Пароль пользоватяеля: " + password;
-            Text3.Text = "Примечания пользоватяеля: " + notes;
-            bor.IsVisible = true;
+            
+                name = message7.Text;
+                password = message8.Text;
+                notes = message1.Text;
+                message2.IsVisible = false;
+                Text1.Text = "Имя пользоватяеля: " + name;
+                Text2.Text = "Пароль пользоватяеля: " + password;
+                Text3.Text = "Примечания пользоватяеля: " + notes;
+                bor.IsVisible = true;
+            
         }
         public void ClickHandler1(object sender, RoutedEventArgs args)
         {
@@ -45,19 +47,18 @@ namespace AvaloniaApplication4.Views
 
         public void ButtonPressed(object sender, RoutedEventArgs args)
         {
-            message3.IsChecked = true;
+
         }
         public void ButtonPressed2(object sender, RoutedEventArgs args)
         {
-            if (message3.IsChecked == false)
-            {
-                message1.IsEnabled = false;
-            }
-            else if (message3.IsChecked == true)
+            if (message4.IsChecked == false)
             {
                 message1.IsEnabled = true;
-                message3.IsChecked = false;
             }
+            if (message4.IsChecked == true)
+            {
+                message1.IsEnabled = false;
+            } 
         }
         public void ButtonPressed3(object sender, RoutedEventArgs args)
         {

@@ -11,7 +11,9 @@
 
 	<TabControl>
 		<TabItem Header="Ввод данных" FontSize="18" x:Name="kol">
-			<Grid ColumnDefinitions="500, 1000, 50" Background="blue" RowDefinitions="18,Auto,Auto">
+			<Grid ColumnDefinitions="500, 450, 500" Background="blue" RowDefinitions="18,Auto,Auto">
+				<Image Margin="20" Height="500" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+				<Image Margin="20" HorizontalAlignment="Center" Height="500" Grid.Column="2" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
 				<Border Background="Gainsboro" BorderBrush="Black" BorderThickness="4" CornerRadius="25" Padding="5" Margin="40" Grid.Row="2" x:Name="message2" Grid.Column="1">
 					<StackPanel Margin="20" Grid.Row="3" Grid.Column="0">
 						<TextBlock TextAlignment="Center">Данные:</TextBlock>
@@ -23,7 +25,7 @@
 						<TextBox Height="60" AcceptsReturn="True"  x:Name="message1" TextWrapping="Wrap" CornerRadius="17"/>
 						<StackPanel Margin="20">
 							<CheckBox Click="ButtonPressed" x:Name="message3" IsThreeState="True" >Можно писать в поле Notes</CheckBox>
-							<CheckBox Click="ButtonPressed2" x:Name="message4" IsThreeState="True">Нельзя писать в поле Notes</CheckBox>
+							<CheckBox Click="ButtonPressed2" x:Name="message4" IsThreeState="True">Можно/нельзя писать в поле Notes</CheckBox>
 							<Button Click="ButtonPressed3">Отчистить поле с данными</Button>
 						</StackPanel>
 						<Button Click="ClickHandler" HorizontalAlignment="Center" Margin="5" Foreground="green" Content="Подолжить" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
@@ -42,9 +44,14 @@
 			</Grid>
 		</TabItem>
 		<TabItem Header="Календарь" FontSize="18">
-			<StackPanel Margin="20" HorizontalAlignment="Center">
-				<Calendar SelectionMode="MultipleRange"/>
-			</StackPanel>
+			<Grid ColumnDefinitions="500, 500" Background="blue" RowDefinitions="Auto,Auto">
+				<StackPanel Grid.Column="0" Grid.Row="0">
+					<Image Margin="20" Height="500" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+				</StackPanel>
+				<StackPanel Margin="85" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">
+					<Calendar SelectionMode="MultipleRange"/>
+				</StackPanel>
+			</Grid>
 		</TabItem>
 		<TabItem Header="Выпадающая менюшка" FontSize="18">
 			<Grid ColumnDefinitions="780" Background="GreenYellow" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
@@ -86,9 +93,7 @@
 					</DockPanel>
 				</StackPanel>
 				<StackPanel Margin="20" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
-					<TimePicker Header="Пожалуйста, выберите время:"
-					ClockIdentifier="24HourClock"
-					MinuteIncrement="1"/>
+					<TimePicker Header="Пожалуйста, выберите время:" ClockIdentifier="24HourClock" MinuteIncrement="1"/>
 					<TimePicker SelectedTime="12:40"/>
 				</StackPanel>
 				<StackPanel Margin="20" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center">
@@ -130,8 +135,7 @@
 					</ComboBox>
 				</StackPanel>
 				<StackPanel Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center">
-					<ComboBox x:Name="fontComboBox" SelectedIndex="0"
-				Width="200" MaxDropDownHeight="300">
+					<ComboBox x:Name="fontComboBox" SelectedIndex="0" Width="200" MaxDropDownHeight="300">
 						<ComboBox.ItemTemplate>
 							<DataTemplate>
 								<TextBlock Text="{Binding Name}" FontFamily="{Binding}" />
@@ -200,14 +204,14 @@
 			</Grid>
 		</TabItem>
 		<TabItem Header="Какая-то фигня" FontSize="18">
-			<WrapPanel Orientation="Vertical">
-				<Rectangle Fill="Navy" Width="100" Height="100" Margin="20"/>
-				<Rectangle Fill="Yellow" Width="100" Height="100" Margin="20"/>
-				<Rectangle Fill="Green" Width="100" Height="100" Margin="20"/>
-				<Rectangle Fill="Red" Width="100" Height="100" Margin="20"/>
-				<Rectangle Fill="Purple" Width="100" Height="100" Margin="20"/>
-			</WrapPanel>
-		</TabItem>
+					<WrapPanel Orientation="Vertical">
+						<Rectangle Fill="Navy" Width="100" Height="100" Margin="20"/>
+						<Rectangle Fill="Yellow" Width="100" Height="100" Margin="20"/>
+						<Rectangle Fill="Green" Width="100" Height="100" Margin="20"/>
+						<Rectangle Fill="Red" Width="100" Height="100" Margin="20"/>
+						<Rectangle Fill="Purple" Width="100" Height="100" Margin="20"/>
+					</WrapPanel>
+			</TabItem>
 		<TabItem Header="Какая-то фигня 2" FontSize="18">
 		<DockPanel Width="300" Height="300">
 			<Rectangle Fill="Red" Height="100" DockPanel.Dock="Top"/>
