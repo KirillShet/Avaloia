@@ -1,0 +1,358 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:vm="using:AvaloniaApplication4.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="850" d:DesignHeight="850"
+        x:Class="AvaloniaApplication4.Window1"
+		x:DataType="vm:MainWindowViewModel"
+		Icon="/Assets/avalonia-logo.ico"
+        Title="Window1"
+		TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent">
+	<ScrollViewer>
+		<TabControl x:Name="Kol3">
+			<TabItem Header="hjsdfbv" FontSize="18" Background="White">
+				<Grid ColumnDefinitions="0, 800">
+					<Grid ColumnDefinitions="150, 550, 150" Background="MediumTurquoise">
+						<StackPanel Background="Chocolate" Grid.Column="1">
+							<Grid RowDefinitions="28,15,500,100">
+								<Border	Background="YellowGreen" Grid.Row="0" CornerRadius="25" Margin="5">
+									<TextBlock HorizontalAlignment="Center"> Добро пожаловать! </TextBlock>
+								</Border>
+								<Border Background="DarkSeaGreen" Grid.Row="2">
+									<Grid ColumnDefinitions="160,20, 190, 50, 190" RowDefinitions="70,350,100">
+										<Border Background="Khaki" Grid.Column="2" Grid.Row="1" CornerRadius="20">
+											<Grid RowDefinitions="25,60,25,60,25,60">
+												<TextBlock HorizontalAlignment="Center" Margin="10" Grid.Row="0">Сводка правил: </TextBlock>
+												<Border BorderBrush="Black" BorderThickness="2" Grid.Row="1" Margin="8" Background="BurlyWood" Grid.RowSpan="3">
+													<ScrollViewer Name="Pravilo">
+														<StackPanel>
+															<TextBlock> Правило номер 1: </TextBlock>
+															<TextBlock> Не изучать код </TextBlock>
+															<TextBlock> Правило номер 2: </TextBlock>
+															<TextBlock> Не олепнуть от кода </TextBlock>
+															<TextBlock> Правило номер 3: </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+															<TextBlock> Не ослепнуть от кода </TextBlock>
+														</StackPanel>
+													</ScrollViewer>
+												</Border>
+												<Button Click="ClickHandler" Name="RunButton" HorizontalAlignment="Center" Height="32" Content="Абра-Кадабра" Grid.Row="4"/>
+												<ComboBox SelectedIndex="0" MaxDropDownHeight="100" Grid.Row="5" Margin="10" HorizontalAlignment="Center">
+													<ComboBoxItem>Text Item 1</ComboBoxItem>
+													<ComboBoxItem>Text Item 2</ComboBoxItem>
+													<ComboBoxItem>Text Item 3</ComboBoxItem>
+													<ComboBoxItem>Text Item 4</ComboBoxItem>
+													<ComboBoxItem>Text Item 5</ComboBoxItem>
+													<ComboBoxItem>Text Item 6</ComboBoxItem>
+													<ComboBoxItem>Text Item 7</ComboBoxItem>
+													<ComboBoxItem>Text Item 8</ComboBoxItem>
+													<ComboBoxItem>Text Item 9</ComboBoxItem>
+												</ComboBox>
+											</Grid>
+										</Border>
+										<StackPanel Grid.Column="0" Grid.Row="0">
+											<Grid RowDefinitions="60,60,25,60,20,60,25,60,25,60,25,60" ColumnDefinitions="85, 25">
+												<StackPanel Grid.Row="1" HorizontalAlignment="Left">
+													<Image Margin="20" Height="80" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+												</StackPanel>
+												<StackPanel Grid.Row="3" HorizontalAlignment="Left">
+													<Image Margin="20" Height="74" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\Без названия.jfif"/>
+												</StackPanel>
+												<StackPanel Grid.Row="5" HorizontalAlignment="Left">
+													<Image Margin="20" Height="80" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+												</StackPanel>
+												<StackPanel Grid.Row="7" HorizontalAlignment="Left">
+													<Image Margin="20" Height="74" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\Без названия.jfif"/>
+												</StackPanel>
+											</Grid>
+										</StackPanel>
+										<StackPanel Grid.Column="4" Grid.Row="0">
+											<Grid RowDefinitions="60,60,25,60,20,60,25,60,25,60,25,60" ColumnDefinitions="85, 25">
+												<StackPanel Grid.Row="1" HorizontalAlignment="Left">
+													<Image Margin="20" Height="80" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+												</StackPanel>
+												<StackPanel Grid.Row="3" HorizontalAlignment="Left">
+													<Image Margin="20" Height="74" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\Без названия.jfif"/>
+												</StackPanel>
+												<StackPanel Grid.Row="5" HorizontalAlignment="Left">
+													<Image Margin="20" Height="80" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+												</StackPanel>
+												<StackPanel Grid.Row="7" HorizontalAlignment="Left">
+													<Image Margin="20" Height="74" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\Без названия.jfif"/>
+												</StackPanel>
+											</Grid>
+										</StackPanel>
+									</Grid>
+								</Border>
+							</Grid>
+						</StackPanel>
+						<Panel  Grid.Column="1">
+							<SplitView IsPaneOpen="True"
+							   DisplayMode="Inline"
+							   OpenPaneLength="300"
+							   Name="Pane">
+								<SplitView.Pane>
+									<StackPanel>
+										<TextBlock HorizontalAlignment="Center"> Что-то </TextBlock>
+										<Border Background="Khaki" HorizontalAlignment="Center" CornerRadius="20" Margin="5" Width="260">
+											<StackPanel>
+												<TextBlock HorizontalAlignment="Center"> 1 </TextBlock>
+												<TextBlock HorizontalAlignment="Center"> 2 </TextBlock> 
+												<TextBlock HorizontalAlignment="Center"> 3 </TextBlock>
+												<TextBlock HorizontalAlignment="Center"> 4 </TextBlock>
+											</StackPanel>
+										</Border>
+									</StackPanel>
+								</SplitView.Pane>
+								<Button Click="ButtonPressed3" VerticalAlignment="Top" Height="65"  Background="Transparent">
+								<StackPanel>
+									<Image Name="pictur1" Height="55" Width="55" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\5880208.png"/>
+									<Image Name="pictur2" IsVisible="False" Height="55" Width="55" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\png-transparent-computer-icons-arrow-symbol-arrow-psd-angle-text-rectangle-thumbnail.png"/>
+								</StackPanel>
+									</Button>
+							</SplitView>
+						</Panel>
+					</Grid>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Календарь" FontSize="18" x:Name="kol2" Background="white">
+				<Grid ColumnDefinitions="500, 500" Background="blue" RowDefinitions="Auto,Auto" x:Name="gir2">
+					<StackPanel Grid.Column="0" Grid.Row="0">
+						<Image Margin="20" Height="500" Grid.Column="0" Grid.Row="2" Width="500" Source="C:\Users\prdb\Desktop\IP1-21\Щетинин Кирилл\AvaloniaApplication4\Assets\1617279064_35-p-fon-shkola-35.jpg"/>
+					</StackPanel>
+					<StackPanel Margin="85" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">
+						<Calendar SelectionMode="MultipleRange"/>
+					</StackPanel>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Выпадающая менюшка" FontSize="18" Background="white">
+				<Grid ColumnDefinitions="780" Background="GreenYellow" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+					<StackPanel Margin="20" Grid.Row="0" Grid.Column="0">
+						<Expander VerticalAlignment="Top">
+							<Expander.Header>
+								Hidden Search
+							</Expander.Header>
+							<Grid ColumnDefinitions="75, 50" RowDefinitions="27,27,27,27,27,27,27,27,27">
+								<TextBlock  Grid.Row="0" Grid.Column="0" >First Group</TextBlock>
+								<RadioButton  Grid.Row="1" Grid.Column="1" GroupName="First Group" Content="1" />
+								<RadioButton  Grid.Row="2" Grid.Column="1" GroupName="First Group" Content="2"/>
+								<RadioButton Grid.Row="3" Grid.Column="1" GroupName="First Group" Content="3"/>
+								<TextBlock Grid.Row="4" Grid.Column="0" >second</TextBlock>
+								<RadioButton Grid.Row="5" Grid.Column="1" GroupName="second" Content="1"/>
+								<RadioButton Grid.Row="6" Grid.Column="1" GroupName="second" Content="2"/>
+								<RadioButton Grid.Row="7" Grid.Column="1" GroupName="second" Content="3"/>
+							</Grid>
+						</Expander>
+					</StackPanel>
+					<StackPanel Margin="20" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Center">
+						<DatePicker DayFormat="ddd dd"/>
+					</StackPanel>
+					<StackPanel Margin="20" Grid.Row="1" Grid.Column="0">
+						<DockPanel HorizontalAlignment="Center">
+							<Menu DockPanel.Dock="Top">
+								<MenuItem Header="_File">
+									<MenuItem Header="_Open..."/>
+									<Separator/>
+									<MenuItem Header="_Exit"/>
+								</MenuItem>
+								<MenuItem Header="_Edit">
+									<MenuItem Header="Copy"/>
+									<MenuItem Header="Paste"/>
+								</MenuItem>
+							</Menu>
+							<TextBlock/>
+						</DockPanel>
+					</StackPanel>
+					<StackPanel Margin="20" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
+						<TimePicker Header="Пожалуйста, выберите время:" ClockIdentifier="24HourClock" MinuteIncrement="1"/>
+						<TimePicker SelectedTime="12:40"/>
+					</StackPanel>
+					<StackPanel Margin="20" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center">
+						<ComboBox SelectedIndex="0" MaxDropDownHeight="100">
+							<ComboBoxItem>Text Item 1</ComboBoxItem>
+							<ComboBoxItem>Text Item 2</ComboBoxItem>
+							<ComboBoxItem>Text Item 3</ComboBoxItem>
+							<ComboBoxItem>Text Item 4</ComboBoxItem>
+							<ComboBoxItem>Text Item 5</ComboBoxItem>
+							<ComboBoxItem>Text Item 6</ComboBoxItem>
+							<ComboBoxItem>Text Item 7</ComboBoxItem>
+							<ComboBoxItem>Text Item 8</ComboBoxItem>
+							<ComboBoxItem>Text Item 9</ComboBoxItem>
+						</ComboBox>
+					</StackPanel>
+					<StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center">
+						<ComboBox SelectedIndex="0">
+							<ComboBoxItem>
+								<Panel>
+									<Ellipse Width="50" Height="50" Fill="Red"/>
+									<TextBlock VerticalAlignment="Center"
+												HorizontalAlignment="Center">Red</TextBlock>
+								</Panel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<Panel>
+									<Ellipse Width="50" Height="50" Fill="Orange"/>
+									<TextBlock VerticalAlignment="Center"
+												HorizontalAlignment="Center">Amber</TextBlock>
+								</Panel>
+							</ComboBoxItem>
+							<ComboBoxItem>
+								<Panel>
+									<Ellipse Width="50" Height="50" Fill="Green"/>
+									<TextBlock VerticalAlignment="Center"
+												HorizontalAlignment="Center">Green</TextBlock>
+								</Panel>
+							</ComboBoxItem>
+						</ComboBox>
+					</StackPanel>
+					<StackPanel Grid.Row="7" HorizontalAlignment="Center">
+						<ComboBox x:Name="fontComboBox" SelectedIndex="0" Width="200" MaxDropDownHeight="300">
+							<ComboBox.ItemTemplate>
+								<DataTemplate>
+									<TextBlock Text="{Binding Name}" FontFamily="{Binding}" />
+								</DataTemplate>
+							</ComboBox.ItemTemplate>
+						</ComboBox>
+					</StackPanel>
+					<Button Grid.Row="9" HorizontalAlignment="Center" Content="Регистрация" x:Name="VerButton"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Что-то" FontSize="18" Background="white">
+				<StackPanel  Background="Pink">
+					<Border BorderBrush="DarkGray" BorderThickness="1" Width="300" Height="300">
+						<RelativePanel >
+							<Rectangle Name="RedRect" Fill="Red" Height="50" Width="50"/>
+							<Rectangle Name="BlueRect" Fill="Blue" Opacity="0.5" Height="50" Width="150"
+									   RelativePanel.RightOf="RedRect" />
+							<Rectangle Name="GreenRect" Fill="Green" Height="100"
+									   RelativePanel.Below="RedRect"
+									   RelativePanel.AlignLeftWith="RedRect"
+									   RelativePanel.AlignRightWith="BlueRect"/>
+							<Rectangle Fill="Orange"
+									   RelativePanel.Below="GreenRect"
+									   RelativePanel.AlignLeftWith="BlueRect"
+									   RelativePanel.AlignRightWithPanel="True"
+									   RelativePanel.AlignBottomWithPanel="True"/>
+						</RelativePanel>
+					</Border>
+					<ProgressBar  Margin="0 10" Height="20"
+				Minimum="0" Maximum="100" Value="50"
+				ShowProgressText="True"/>
+					<ProgressBar  Margin="0 10" Height="20"
+								  Minimum="0" Maximum="100" Value="92"
+								  Foreground="Red"
+								  ShowProgressText="True"/>
+				</StackPanel>
+			</TabItem>
+			<TabItem Header="Эксперимент" FontSize="18" Background="white">
+				<Grid ColumnDefinitions="*, 6, *">
+					<Rectangle Grid.Column="0" Fill="blue"/>
+					<StackPanel Grid.Column="0">
+						<Grid ColumnDefinitions="125, 500, 50" Background="blue" RowDefinitions="18,Auto,Auto">
+							<Border Background="Gainsboro" BorderBrush="Black" BorderThickness="4" CornerRadius="25" Padding="5" Margin="40" Grid.Row="2" Grid.Column="1">
+								<StackPanel Margin="20" Grid.Row="3" Grid.Column="0">
+									<TextBlock TextAlignment="Center">Данные:</TextBlock>
+									<TextBlock Margin="5" >Name:</TextBlock>
+									<TextBox  Watermark="Enter your name" CornerRadius="100"/>
+									<TextBlock Margin="5" >Password:</TextBlock>
+									<MaskedTextBox Watermark="Enter your password" PasswordChar="*" CornerRadius="100"/>
+									<TextBlock Margin="10">Notes:</TextBlock>
+									<TextBox Height="60" AcceptsReturn="True" TextWrapping="Wrap" CornerRadius="17"/>
+									<StackPanel Margin="20">
+										<CheckBox IsThreeState="True" IsChecked="False">Not checked by default</CheckBox>
+										<CheckBox IsThreeState="True" IsChecked="True">Checked by default</CheckBox>
+										<CheckBox IsThreeState="True" IsChecked="{x:Null}">Unknown by default</CheckBox>
+									</StackPanel>
+									<Button HorizontalAlignment="Center" Margin="5" Foreground="green" Content="Подолжить" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+								</StackPanel>
+							</Border>
+						</Grid>
+					</StackPanel>
+					<GridSplitter Grid.Column="1" Background="green" ResizeDirection="Columns"/>
+					<Rectangle Grid.Column="2" Fill="Red"/>
+					<StackPanel Margin="20" Grid.Column="2" HorizontalAlignment="Center">
+						<Calendar SelectionMode="MultipleRange"/>
+					</StackPanel>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Какая-то фигня" FontSize="18" Background="white">
+				<WrapPanel Orientation="Vertical">
+					<Rectangle Fill="Navy" Width="100" Height="100" Margin="20"/>
+					<Rectangle Fill="Yellow" Width="100" Height="100" Margin="20"/>
+					<Rectangle Fill="Green" Width="100" Height="100" Margin="20"/>
+					<Rectangle Fill="Red" Width="100" Height="100" Margin="20"/>
+					<Rectangle Fill="Purple" Width="100" Height="100" Margin="20"/>
+				</WrapPanel>
+			</TabItem>
+			<TabItem Header="Какая-то фигня 2" FontSize="18" Background="white">
+				<DockPanel Width="300" Height="300">
+					<Rectangle Fill="Red" Height="100" DockPanel.Dock="Top"/>
+					<Rectangle Fill="Blue" Width="100" DockPanel.Dock="Left" />
+					<Rectangle Fill="Green" Height="100" DockPanel.Dock="Bottom"/>
+					<Rectangle Fill="Orange" Width="100" DockPanel.Dock="Right" Opacity="0.5"/>
+					<Rectangle Fill="Gray" />
+				</DockPanel>
+			</TabItem>
+			<TabItem Header="Какая-то фигня 3" FontSize="18" Background="white">
+				<Grid RowDefinitions="*, 4, *">
+					<Rectangle Grid.Row="0" Fill="Blue"/>
+					<StackPanel Margin="20">
+						<TextBlock Margin="0 5">Number of items:</TextBlock>
+						<NumericUpDown Value="10" />
+					</StackPanel>
+					<GridSplitter Grid.Row="1" Background="Black" ResizeDirection="Rows"/>
+					<Rectangle Grid.Row="2" Fill="Red"/>
+					<StackPanel Margin="20" Grid.Row="2">
+						<TextBlock Margin="0 5">Opacity:</TextBlock>
+						<NumericUpDown  Value="0.5" Increment="0.05"
+							FormatString="0.00"
+							Minimum="0" Maximum="1"/>
+					</StackPanel>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Какая-то фигня 4" FontSize="18" Background="white">
+				<SplitView IsPaneOpen="True"
+				   DisplayMode="Inline"
+				   OpenPaneLength="300">
+					<SplitView.Pane>
+						<TextBlock Text="Pane"
+								   FontSize="24"
+								   VerticalAlignment="Center"
+								   HorizontalAlignment="Center"/>
+					</SplitView.Pane>
+					<Grid>
+						<TextBlock Text="Content"
+								   FontSize="24"
+								   VerticalAlignment="Center"
+								   HorizontalAlignment="Center"/>
+					</Grid>
+				</SplitView>
+			</TabItem>
+			<TabItem Header="F" FontSize="18" Background="Violet">
+				<UniformGrid Rows="1" Columns="3" Width="300" Height="200">
+					<Rectangle Fill="navy" Grid.Column="0" Grid.Row="0"/>
+					<Rectangle Fill="white" Grid.Column="1" Grid.Row="0"/>
+					<Rectangle Fill="red" Grid.Column="2" Grid.Row="0"/>
+				</UniformGrid>
+			</TabItem>
+			<TabItem Header="g" FontSize="18" Background="White">
+				<StackPanel Margin="20">
+					<TextBlock Margin="0 5">Choose an animal:</TextBlock>
+					<AutoCompleteBox x:Name="animals" FilterMode="StartsWith" />
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+	</ScrollViewer>
+</Window>

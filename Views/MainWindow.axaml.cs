@@ -6,49 +6,47 @@ using System;
 using System.Linq;
 using Avalonia.Data;
 using DynamicData;
+using System.Threading.Tasks;
+using Avalonia.Threading;
 
 namespace AvaloniaApplication4.Views
 {
     public partial class MainWindow : Window
     {
-        private string name;
-        private string password;
-        private string notes;
-        public void ClickHandler(object sender, RoutedEventArgs args)
-        {
-            
-                name = message7.Text;
-                password = message8.Text;
-                notes = message1.Text;
-                message2.IsVisible = false;
-                Text1.Text = "Имя пользоватяеля: " + name;
-                Text2.Text = "Пароль пользоватяеля: " + password;
-                Text3.Text = "Примечания пользоватяеля: " + notes;
-                bor.IsVisible = true;
-            
-        }
-        public void ClickHandler1(object sender, RoutedEventArgs args)
-        {
-            name = message7.Text;
-            password = message8.Text;
-            notes = message1.Text;
-            message2.IsVisible = true;
-            bor.IsVisible = false;
-        }
         public MainWindow()
         {
             InitializeComponent();
-            fontComboBox.Items = FontManager.Current
-                .GetInstalledFontFamilyNames()
-                .Select(x => new FontFamily(x))
-                .OrderBy(x => x.Name);
-            fontComboBox.SelectedIndex = 0;
         }
 
-        public void ButtonPressed(object sender, RoutedEventArgs args)
+        public async void ClickHandler(object sender, RoutedEventArgs args)
         {
-
+            ResultText.Text = "I'm working ...";
+            RunButton.IsEnabled = false;
+            if (message7.Text == "" || message7.Text == null)
+            {
+                message7.Background = Brushes.Red;
+            }
+            if (message8.Text == "" || message8.Text == null)
+            {
+                message8.Background = Brushes.Red;
+            }
+            if (message1.Text == "" || message1.Text == null)
+            {
+                message1.Background = Brushes.Red;
+            }
+            await Task.Delay(1000);
+            message7.Background = Brushes.White;
+            message8.Background = Brushes.White;
+            message1.Background = Brushes.White;
+            ResultText.Text = "Done";
+            RunButton.IsEnabled = true;
+            if (message7.Text != null && message8.Text != null && message1.Text != null)
+            {
+                new Window1().Show();
+                Close();
+            }
         }
+      
         public void ButtonPressed2(object sender, RoutedEventArgs args)
         {
             if (message4.IsChecked == false)
@@ -62,9 +60,9 @@ namespace AvaloniaApplication4.Views
         }
         public void ButtonPressed3(object sender, RoutedEventArgs args)
         {
-            message7.Text = "";
-            message8.Text = "";
-            message1.Text = "";
+            message7.Text = null;
+            message8.Text = null;
+            message1.Text = null;
         }
     }
 }
